@@ -1,1 +1,11 @@
 Test Plan and Design Notes
+From Canvas:
+"Problem Description
+In this project [our] team will:
+[1.] Generate all possible permutations of small integer arrays.
+[2.] Run multiple sorting algorithms on each permutation.
+[3.] Count the number of comparisons each algorithm makes.
+[4.] Identify the best 10, worst 10, and average performances.
+[5.] Use the collected data to make and defend Big-O / Big-Ω / Big-Θ style estimates based on your measurements.
+[NOTE:] For this project [we] will specifically compare mergesort, quicksort, shaker sort (a bidirectional bubble sort), and heapsort[...]
+...You may use textbook or online versions of these algorithms as long as you (a) understand them, (b) clearly comment them, and (c) document your source."
