@@ -22,5 +22,5 @@ print (ArrayList)
 
 #Mergesort implementation methods and logic provided by FelixTechTips on YouTube:
 #https://www.youtube.com/watch?v=cVZMah9kEjI&t=544s
-#Logic for list(map(int, x.split())) logic from:
+#Logic for list(map(int, x.split())) method call from:
 #https://stackoverflow.com/questions/19555472/change-a-string-of-integers-separated-by-spaces-to-a-list-of-int
