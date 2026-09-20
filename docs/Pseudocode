@@ -1,6 +1,14 @@
 #[Pseudocode and ToDos can be posted in this folder within the repository]
+#Mergesort - "Divide and Conquer Algorithm"
+#Has O(n * log(n)) running time, which is optimal for comparison-based algorithms
 #Mergesort
-#Mergesort:
+#Step 1: Split array in half.
+#Step 2: Call merge sort on each half to sort them recursively.
+#Step 3: Merge both sorted halves into one array.
+ArrayInput = input("")
+ArrayList = list(map(int, ArrayInput.split()))
+print (ArrayList)
+
 
 #Quicksort
 #Quicksort:
@@ -10,3 +18,8 @@
 
 #Heapsort
 #Heapsort:
+
+#Mergesort implementation methods and logic provided by FelixTechTips on YouTube:
+#https://www.youtube.com/watch?v=cVZMah9kEjI&t=544s
+#Logic for list(map(int, x.split())) logic from:
+#https://stackoverflow.com/questions/19555472/change-a-string-of-integers-separated-by-spaces-to-a-list-of-int
