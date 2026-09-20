@@ -1,5 +1,21 @@
 #[Pseudocode and ToDos can be posted in this folder within this section of the repository]
 
+#Permutation Generator
+Function generatePermutations(numbers):
+    IF numbers has only one number:
+        return [numbers]
+    permutations = empty list
+
+    FOR each number in numbers:
+
+        remove the current number from numbers
+        get all permutations of the remaining numbers
+        FOR each permuation:
+            add current number to the beginning of permutation
+            add permutation to permutations
+    return permutations
+#TODO implement Permutation Generator
+
 #Mergesort - "Divide and Conquer Algorithm"
 #Has O(n * log(n)) running time, which is optimal for comparison-based algorithms
 #Mergesort
