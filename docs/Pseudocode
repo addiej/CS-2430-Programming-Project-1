@@ -1,4 +1,5 @@
-#[Pseudocode and ToDos can be posted in this folder within the repository]
+#[Pseudocode and ToDos can be posted in this folder within this section of the repository]
+
 #Mergesort - "Divide and Conquer Algorithm"
 #Has O(n * log(n)) running time, which is optimal for comparison-based algorithms
 #Mergesort
