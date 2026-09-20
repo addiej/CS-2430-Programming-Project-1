@@ -1,2 +1,2 @@
 ## Erich - Communications Lead
-##Addie - Verification Lead
+Addie - Verification Lead
