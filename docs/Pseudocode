@@ -5,6 +5,7 @@
 #Step 1: Split array in half.
 #Step 2: Call merge sort on each half to sort them recursively.
 #Step 3: Merge both sorted halves into one array.
+
 ArrayInput = input("")
 ArrayList = list(map(int, ArrayInput.split()))
 print (ArrayList)
