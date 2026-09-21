@@ -16,12 +16,7 @@ Function generatePermutations(numbers):
     return permutations
 #TODO implement Permutation Generator
 
-#Mergesort - "Divide and Conquer Algorithm"
-#Has O(n * log(n)) running time, which is optimal for comparison-based algorithms
-#Mergesort
-#Step 1: Split array in half.
-#Step 2: Call merge sort on each half to sort them recursively.
-#Step 3: Merge both sorted halves into one array.
+
 
 print("Sorting algorithm options: \nq = Quick Sort \ns = Shaker Sort \nh = Heap Sort \nm = Merge Sort")
 UserSortAlgorithmChoice = input("Which of the sorting algorithms would you like to use? ").lower()
@@ -54,7 +49,12 @@ if UserSortAlgorithmChoice == 'm':
     ArrayListM = list(map(int, ArrayInputM.split()))
     print (f"Array: {ArrayListM}")
     #TODO implement merge Sort
-
+    #Mergesort - "Divide and Conquer Algorithm"
+    #Has O(n * log(n)) running time, which is optimal for comparison-based algorithms
+    #Mergesort
+    #Step 1: Split array in half.
+    #Step 2: Call merge sort on each half to sort them recursively.
+    #Step 3: Merge both sorted halves into one array.
 
 
 #INTELLECTUAL CREDITS:
