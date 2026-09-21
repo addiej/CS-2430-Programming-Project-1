@@ -39,8 +39,8 @@ Analysis
 -Report bugs to Implementation lead
 ---------------------------------------
 
-##Huu - Implementaion Lead
--Set up Python project strucyure
+##Huu - Implementation Lead
+-Set up Python project strutyure
 -Permutation generator
 -Mergesort implementation
 -Quicksort implementation
