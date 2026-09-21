@@ -24,28 +24,28 @@ UserSortAlgorithmChoice = input("Which of the sorting algorithms would you like 
 
 if UserSortAlgorithmChoice == 'q':
     print("Quick Sort option chosen.")
-    ArrayInputQ = input("Enter in an array of numbers (without commas separating values)")
+    ArrayInputQ = input("Enter an array of numbers (without commas separating values)")
     ArrayListQ = list(map(int, ArrayInputQ.split()))
     print (f"Array: {ArrayListQ}")
     #TODO implement Quick Sort
 
 if UserSortAlgorithmChoice == 's':
     print("Shaker Sort option chosen.")
-    ArrayInputS = input("Enter in an array of numbers (without commas separating values)")
+    ArrayInputS = input("Enter an array of numbers (without commas separating values)")
     ArrayListS = list(map(int, ArrayInputS.split()))
     print (f"Array: {ArrayListS}")
     #TODO implement Shaker Sort
     
 if UserSortAlgorithmChoice == 'h':
     print("Heap Sort option chosen.")
-    ArrayInputH = input("Enter in an array of numbers (without commas separating values)")
+    ArrayInputH = input("Enter an array of numbers (without commas separating values)")
     ArrayListH = list(map(int, ArrayInputH.split()))
     print (f"Array: {ArrayListH}")
     #TODO implement Heap Sort
 
 if UserSortAlgorithmChoice == 'm':
     print("Heap Merge Sort option chosen.")
-    ArrayInputM = input("Enter in an array of numbers (without commas separating values)")
+    ArrayInputM = input("Enter an array of numbers (without commas separating values)")
     ArrayListM = list(map(int, ArrayInputM.split()))
     print (f"Array: {ArrayListM}")
     #TODO implement merge Sort
