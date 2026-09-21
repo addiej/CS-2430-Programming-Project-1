@@ -7,8 +7,7 @@ Project Tasks
  5. Implement heapsort (TBD)
  6. Make every algorithm count comparisons consistently (Addie)
  7. Create a driver that runs every permutation through every algorithm.
- 8. Collect the results for n = 4, 6, 8 (Addie)
-Analysis
+ 8. Collect the results for n = 4, 6, 8 Analysis (Addie)
  9. Determine best 10, worst 10, and average results. (Addie)
  10. Use those results to answer the five analysis questions.
      
