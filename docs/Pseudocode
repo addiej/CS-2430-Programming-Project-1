@@ -113,10 +113,14 @@ if UserSortAlgorithmChoice == 'm':
 print ("\nINTELLECTUAL CREDITS: \n")
 IntellectualCreditsMergeSort1 = "Mergesort implementation methods and logic provided by FelixTechTips on YouTube"
 IntellectualCreditsMergeSort1URL = "https://www.youtube.com/watch?v=cVZMah9kEjI&t=544s"
-IntellualCreditsMergeSortLogic1 = "Logic for list(map(int, x.split())) method call from:"
-IntellualCreditsMergeSortLogic1URL = "https://stackoverflow.com/questions/19555472/change-a-string-of-integers-separated-by-spaces-to-a-list-of-int"
+IntellectualCreditsMergeSortLogic1 = "Logic for list(map(int, x.split())) method call from:"
+IntellectualCreditsMergeSortLogic1URL = "https://stackoverflow.com/questions/19555472/change-a-string-of-integers-separated-by-spaces-to-a-list-of-int"
+IntellectualCreditsHeapSortLogic1 = " 'Heap Sort Visually Explained | Sorting Algorithm | Heaps' by ByteQuest on YouTube.com"
+IntellectualCreditsHeapSortLogicURL = "https://www.youtube.com/watch?v=ZxH3jcA3EK0&t=223s"
 
 print (IntellectualCreditsMergeSort1)
 print (f"URL: {IntellectualCreditsMergeSort1URL}")
-print (IntellualCreditsMergeSortLogic1)
-print (f"URL: {IntellualCreditsMergeSortLogic1URL}")
+print (IntellectualCreditsMergeSortLogic1)
+print (f"URL: {IntellectualCreditsMergeSortLogic1URL}")
+print (IntellectualCreditsHeapSortLogic1)
+print (f"URL: {IntellectualCreditsHeapSortLogicURL}")
