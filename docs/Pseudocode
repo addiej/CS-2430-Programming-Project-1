@@ -45,7 +45,35 @@ if UserSortAlgorithmChoice == 'h':
     ArrayInputH = input("Enter an array of numbers (without commas separating values)")
     ArrayListH = list(map(int, ArrayInputH.split()))
     print (f"Array: {ArrayListH}")
-    #TODO implement Heap Sort
+    #TODO implement Heap Sort from pseudocode to working code
+    #STEP 1 — Build a max heap:
+
+    #For each appropriate element:
+        #compare parent with its children
+
+        #determine which is largest:
+            #parent
+            #left child
+            #right child
+
+        #if a child is larger than the parent:
+            #swap them
+            #'heap-ify' the affected section again
+    #STEP 2
+    #The largest number is now at the beginning
+
+    #Swap:
+        #(first element)  with (last unsorted element)
+
+    #then, consider the last element sorted
+
+    #Reduce the size of the unsorted heap
+
+    #'Heapify' the remaining unsorted portion again
+
+    #Repeat until sorted
+
+    #Return the sorted array
 
 if UserSortAlgorithmChoice == 'm':
     print("Heap Merge Sort option chosen.")
