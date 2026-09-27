@@ -9,9 +9,12 @@ def generatePermutations(numbers):
     permutations = []
 
     for number in numbers:
+        remainingNumbers = []
         #remove the current number from numbers
         #get all permutations of the remaining numbers
-        pass
+        for currentNumber in numbers:
+            if currentNumber != number:
+                remainingNumbers.append(currentNumber)
         #FOR each permuation:
             #add current number to the beginning of permutation
             #add permutation to permutations
