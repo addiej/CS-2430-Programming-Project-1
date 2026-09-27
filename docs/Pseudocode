@@ -9,6 +9,7 @@ def generatePermutations(numbers):
     permutations = []
 
     for number in numbers:
+        #initialises an empty list for the remaining numbers
         remainingNumbers = []
         #remove the current number from numbers
         #get all permutations of the remaining numbers
