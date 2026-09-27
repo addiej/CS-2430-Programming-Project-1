@@ -2,6 +2,7 @@
 #Permutation Generator
 #Function generatePermutations(numbers):
 def generatePermutations(numbers):
+    #if  only one number in array: return array
     if len(numbers) == 1:
         return (numbers)
     #permutations = empty list
