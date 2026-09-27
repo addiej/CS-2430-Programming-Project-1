@@ -1,21 +1,21 @@
 #[Pseudocode and ToDos can be posted in this folder within this section of the repository]
-
 #Permutation Generator
-Function generatePermutations(numbers):
-    IF numbers has only one number:
-        return [numbers]
-    permutations = empty list
+#Function generatePermutations(numbers):
+def generatePermutations(numbers):
+    if len(numbers) == 1:
+        return (numbers)
+    #permutations = empty list
+    permutations = []
 
-    FOR each number in numbers:
-
-        remove the current number from numbers
-        get all permutations of the remaining numbers
-        FOR each permuation:
-            add current number to the beginning of permutation
-            add permutation to permutations
-    return permutations
+    for number in numbers:
+        #remove the current number from numbers
+        #get all permutations of the remaining numbers
+        pass
+        #FOR each permuation:
+            #add current number to the beginning of permutation
+            #add permutation to permutations
+    #return permutations
 #TODO implement Permutation Generator
-
 
 
 print("Sorting algorithm options: \nq = Quick Sort \ns = Shaker Sort \nh = Heap Sort \nm = Merge Sort")
