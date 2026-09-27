@@ -9,7 +9,6 @@ def generatePermutations(numbers):
     permutations = []
 
     for number in numbers:
-        #initialises an empty list for the remaining numbers
         remainingNumbers = []
         #remove the current number from numbers
         #get all permutations of the remaining numbers
@@ -53,17 +52,37 @@ if UserSortAlgorithmChoice == 'm':
     ArrayInputM = input("Enter an array of numbers (without commas separating values)")
     ArrayListM = list(map(int, ArrayInputM.split()))
     print (f"Array: {ArrayListM}")
-    #TODO implement merge Sort
+   
     #Mergesort - "Divide and Conquer Algorithm"
     #Has O(n * log(n)) running time, which is optimal for comparison-based algorithms
     #Mergesort
-    #Step 1: Split array in half.
-    #Step 2: Call merge sort on each half to sort them recursively.
-    #Step 3: Merge both sorted halves into one array.
+    #TODO implement merge Sort
+    
+    #IF array contains 0 or 1 elements:
+        #return it
 
+    #Find middle of array
+
+    #Split into:
+        #left half
+        #right half
+
+    #Merge Sort left half
+    #Merge Sort right half
+
+    #Create empty result
+
+    #WHILE both halves still contain elements:
+        #compare first available element from each half
+
+        #move smaller one into result
+
+    #Add any leftover elements
+
+    #Return/display result
 
 #INTELLECTUAL CREDITS:
-print ("INTELLECTUAL CREDITS: \n\n")
+print ("\nINTELLECTUAL CREDITS: \n")
 IntellectualCreditsMergeSort1 = "Mergesort implementation methods and logic provided by FelixTechTips on YouTube"
 IntellectualCreditsMergeSort1URL = "https://www.youtube.com/watch?v=cVZMah9kEjI&t=544s"
 IntellualCreditsMergeSortLogic1 = "Logic for list(map(int, x.split())) method call from:"
