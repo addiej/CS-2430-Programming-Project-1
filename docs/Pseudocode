@@ -31,7 +31,26 @@ if UserSortAlgorithmChoice == 'q':
     ArrayInputQ = input("Enter an array of numbers (without commas separating values)")
     ArrayListQ = list(map(int, ArrayInputQ.split()))
     print (f"Array: {ArrayListQ}")
+
     #TODO implement Quick Sort
+
+    #Choose a pivot from the user-input array
+    #Create a group for numbers smaller than the pivot
+    #Create a group for numbers equal to the pivot
+    #Create a group for numbers greater than the pivot
+
+    #Go through each number:
+        #if number < pivot:
+            #put it in smaller group
+        #if number == pivot:
+            #put it in equal group
+        #if number > pivot:
+            #put it in greater group
+    #Quick Sort the smaller group
+    #Quick Sort the greater group
+    #Combine:
+        #sorted smaller + equal + sorted greater
+    #Return/display sorted array
 
 if UserSortAlgorithmChoice == 's':
     print("Shaker Sort option chosen.")
