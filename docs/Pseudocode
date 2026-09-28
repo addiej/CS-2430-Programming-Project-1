@@ -38,7 +38,30 @@ if UserSortAlgorithmChoice == 's':
     ArrayInputS = input("Enter an array of numbers (without commas separating values)")
     ArrayListS = list(map(int, ArrayInputS.split()))
     print (f"Array: {ArrayListS}")
+
     #TODO implement Shaker Sort
+    #Set swapped to true
+    #Set start to beginning of array
+    #Set end to end of array
+
+    #WHILE swapped is true:
+        #Set swapped to false
+        #FOR each element from start to end:
+            #Compare current element with next element
+            #IF current element > next element:
+                #Swap them
+                #Set swapped to true
+        #IF no elements were swapped:
+            #Stop
+        #Move end backward by one
+        #Set swapped to false
+        #FOR each element from end toward start:
+            #Compare current element with next element
+            #IF current element > next element:
+                #Swap them
+                #Set swapped to true
+        #Move start forward by one
+    #Return/display sorted array
     
 if UserSortAlgorithmChoice == 'h':
     print("Heap Sort option chosen.")
@@ -101,6 +124,8 @@ IntellectualCreditsMergeSortLogic1 = "Logic for list(map(int, x.split())) method
 IntellectualCreditsMergeSortLogic1URL = "https://stackoverflow.com/questions/19555472/change-a-string-of-integers-separated-by-spaces-to-a-list-of-int"
 IntellectualCreditsHeapSortLogic1 = " 'Heap Sort Visually Explained | Sorting Algorithm | Heaps' by ByteQuest on YouTube.com"
 IntellectualCreditsHeapSortLogicURL = "https://www.youtube.com/watch?v=ZxH3jcA3EK0&t=223s"
+IntellectualCreditShakerSortLogic = "Shakersort implementation methods and logic from GeeksforGeeks.com"
+IntellectualCreditShakerSortLogicURL = "https://www.geeksforgeeks.org/python/python-program-for-cocktail-sort/"
 
 print (IntellectualCreditsMergeSort1)
 print (f"URL: {IntellectualCreditsMergeSort1URL}")
@@ -108,3 +133,5 @@ print (IntellectualCreditsMergeSortLogic1)
 print (f"URL: {IntellectualCreditsMergeSortLogic1URL}")
 print (IntellectualCreditsHeapSortLogic1)
 print (f"URL: {IntellectualCreditsHeapSortLogicURL}")
+print (IntellectualCreditShakerSortLogic)
+print (f"URL: {IntellectualCreditShakerSortLogicURL}")
