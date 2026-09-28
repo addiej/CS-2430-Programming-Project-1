@@ -126,6 +126,8 @@ IntellectualCreditsHeapSortLogic1 = " 'Heap Sort Visually Explained | Sorting Al
 IntellectualCreditsHeapSortLogicURL = "https://www.youtube.com/watch?v=ZxH3jcA3EK0&t=223s"
 IntellectualCreditShakerSortLogic = "Shakersort implementation methods and logic from GeeksforGeeks.com"
 IntellectualCreditShakerSortLogicURL = "https://www.geeksforgeeks.org/python/python-program-for-cocktail-sort/"
+IntellectualCreditQuickSortLogic = "Quicksort In Python Explained (With Example And Code) by FelixTechTips on YouTube.com"
+IntellectualCreditQuickSortLogicURL = https://www.youtube.com/watch?v=9KBwdDEwal8&t=754s
 
 print (IntellectualCreditsMergeSort1)
 print (f"URL: {IntellectualCreditsMergeSort1URL}")
@@ -135,3 +137,5 @@ print (IntellectualCreditsHeapSortLogic1)
 print (f"URL: {IntellectualCreditsHeapSortLogicURL}")
 print (IntellectualCreditShakerSortLogic)
 print (f"URL: {IntellectualCreditShakerSortLogicURL}")
+print (IntellectualCreditQuickSortLogic)
+print (f"URL: {IntellectualCreditQuickSortLogicURL}")
