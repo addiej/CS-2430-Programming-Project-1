@@ -2,7 +2,7 @@
 #Heapsort.py
 numbers = []
 
-def heapify(numbers, heapSize, parentIndex):
+def heapsort(numbers, heapSize, parentIndex):
     leftChild = 2 * parentIndex + 1
 
     #determine which is largest:
