@@ -1,4 +1,7 @@
 #[Pseudocode and ToDos can be posted in this folder within this section of the repository]
+
+TODO: automated experiment-driver pseudocode
+
 #Permutation Generator PSEUDOCODE
 #Function generatePermutations(numbers):
     #if only one number in array: return array
