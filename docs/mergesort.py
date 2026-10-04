@@ -1,3 +1,11 @@
+'''TODO author: Addie Hurst'''
+# TODO:
+# - Add a comparison counter.
+# - Count each left[i] <= right[j] comparison.
+# - Do not count loop conditions or index comparisons.
+# - Make the comparison count available to main.py.
+
+
 '''Author: Erich M.'''
 def mergeSort(numbers):
     if len(numbers) == 1:
