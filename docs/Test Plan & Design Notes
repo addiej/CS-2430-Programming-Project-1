@@ -1,14 +1,35 @@
 Test Plan and Design Notes
-From Canvas:
-"Problem Description
-In this project [our] team will:
-[1.] Generate all possible permutations of small integer arrays.
-[2.] Run multiple sorting algorithms on each permutation.
+TEST PLAN
 
-  Write a Driver program with the following:
-[3.] Count the number of comparisons each algorithm makes.
-[4.] Identify the best 10, worst 10, and average performances.
-[5.] Use the collected data to make and defend Big-O / Big-Ω / Big-Θ style estimates based on your measurements.
+1. Permutation Generator
+- Verify that the generator produces the correct number of permutations.
+- Verify that no duplicate permutations are generated.
+- Verify that each permutation contains every integer from 0 through n - 1.
+- Test required values n = 4, 6, and 8.
 
-[NOTE:] For this project [we] will specifically compare mergesort, quicksort, shaker sort (a bidirectional bubble sort), and heapsort[...]
-...You may use textbook or online versions of these algorithms as long as you (a) understand them, (b) clearly comment them, and (c) document your source."
+2. Sorting Algorithms
+For mergesort, quicksort, shaker sort, and heapsort:
+- Give the algorithm unsorted arrays.
+- Verify that the returned array is correctly sorted.
+- Test already-sorted arrays.
+- Test reverse-sorted arrays.
+- Verify that the original permutation can still be recorded by the driver.
+
+3. Comparison Counting
+- Verify that comparisons are counted for element-to-element ordering comparisons only.
+- Verify that loop conditions and index comparisons are not counted.
+- Verify that the same counting rule is used for all four algorithms.
+
+4. Driver
+- Verify that every generated permutation is sent through all four sorting algorithms.
+- Verify that the driver records:
+    - algorithm name
+    - original unsorted array
+    - number of comparisons
+
+5. Experimental Results
+For n = 4, 6, and 8:
+- Verify that results are generated for all four algorithms.
+- Verify that the 10 cases with the fewest comparisons are identified.
+- Verify that the 10 cases with the most comparisons are identified.
+- Verify that the average number of comparisons is calculated correctly.
