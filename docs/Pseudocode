@@ -100,7 +100,7 @@ if UserSortAlgorithmChoice == 'h':
     #Return the sorted array
 
 if UserSortAlgorithmChoice == 'm':
-    print("Heap Merge Sort option chosen.")
+    print("Merge Sort option chosen.")
     ArrayInputM = input("Enter an array of numbers (without commas separating values)")
     ArrayListM = list(map(int, ArrayInputM.split()))
     print (f"Array: {ArrayListM}")
