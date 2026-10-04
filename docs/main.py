@@ -14,39 +14,43 @@ import time
 import csv
 from permutations import *
 from mergesort import *
+from quicksort import *
 
 SIZES = [4, 6, 8]
 TRIALS = 10
+ALGORITHMS = {"mergesort": mergeSort, "quicksort": quicksort}
 
-def benchmark(size, trials=TRIALS):
-
-    inputs = generatePermutations(list(range(1, size + 1)))
-
+def benchmark(sort_algorithm, inputs, trials=TRIALS):
     trial_times = []
     for trial in range(trials):
         start = time.perf_counter()
         for arr in inputs:
-            mergeSort(arr)
+            sort_algorithm(arr)
         end = time.perf_counter()
         trial_times.append(end - start)
-    return len(inputs), trial_times
+    return trial_times
 
 if __name__ == "__main__":
     rows = []
-    print(f"{'size' :>4} {'arrays':>7} {'trial':>5} {'total (s)':>10} {'per sort (microseconds)':>14}")
+    print(f"{'algorithm':<10} {'size' :>4} {'arrays':>7} {'trial':>5} {'total (s)':>10} {'per sort (microseconds)':>14}")
 
-    for size in SIZES:
-        count, trial_times = benchmark(size)
-        for trial, total in enumerate(trial_times, start=1):
-            per_sort_us = total / count * 1_000_000
-            print(f"{size:>4} {count:>7} {trial:>5} {total:>10.4f} {per_sort_us:>14.2f}")
-            rows.append([size, count, trial, total, per_sort_us])
+    for name, sort_algorithm in ALGORITHMS.items():
 
-        best = min(trial_times)
-        print(f" -> size {size}: best total {best:.4f}s, "
+        for size in SIZES:
+            inputs = generatePermutations(list(range(1, size + 1)))
+            count = len(inputs)
+            trial_times = benchmark(sort_algorithm, inputs)
+
+            for trial, total in enumerate(trial_times, start=1):
+                per_sort_us = total / count * 1_000_000
+                print(f"{name:<10} {size:>4} {count:>7} {trial:>5} {total:>10.4f} {per_sort_us:>14.2f}")
+                rows.append([name, size, count, trial, total, per_sort_us])
+
+            best = min(trial_times)
+            print(f" -> {name}, size {size}: best total {best:.4f}s, "
               f"avg per sort {best / count * 1_000_000:.2f} microseconds\n")
 
 with open("results.csv", "w", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["sizes", "arrays_sorted", "trial", "total_seconds", "per_sort_microseconds"])
+    writer.writerow(["algorithm", "sizes", "arrays_sorted", "trial", "total_seconds", "per_sort_microseconds"])
     writer.writerows(rows)
