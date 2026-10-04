@@ -9,3 +9,4 @@ Addie - Verification Lead
     -reviewed main.py against project requirements and documented required corrections.
     -updated Design Notes & Decisions
     -authored and updated Test Plan & Design Notes
+    -Added TODOs/debugs for mergsort.py and permutations.py (verifying Erich's code)
