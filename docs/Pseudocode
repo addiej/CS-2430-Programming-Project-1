@@ -1,12 +1,12 @@
 #[Pseudocode and ToDos can be posted in this folder within this section of the repository]
 #Permutation Generator PSEUDOCODE
-#Permutation Generator
 #Function generatePermutations(numbers):
-    #if  only one number in array: return array
+    #if only one number in array: return array
     #permutations = empty list
+    #FOR each number in numbers:
         #remove the current number from numbers
         #get all permutations of the remaining numbers
-        #FOR each permuation:
+        #FOR each permutation:
             #add current number to the beginning of permutation
             #add permutation to permutations
     #return permutations
