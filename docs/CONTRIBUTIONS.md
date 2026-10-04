@@ -1,4 +1,4 @@
 ## Erich - Communications Lead
     -wrote permutations.py
-    -wrote x
+    -wrote mergesort.py
 Addie - Verification Lead
