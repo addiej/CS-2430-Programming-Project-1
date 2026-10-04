@@ -1,3 +1,4 @@
+'''Author: Erich M.'''
 import time
 import csv
 from permutations import *
