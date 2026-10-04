@@ -1,26 +1,16 @@
 #[Pseudocode and ToDos can be posted in this folder within this section of the repository]
+#Permutation Generator PSEUDOCODE
 #Permutation Generator
 #Function generatePermutations(numbers):
-def generatePermutations(numbers):
     #if  only one number in array: return array
-    if len(numbers) == 1:
-        return (numbers)
     #permutations = empty list
-    permutations = []
-
-    for number in numbers:
-        remainingNumbers = []
         #remove the current number from numbers
         #get all permutations of the remaining numbers
-        for currentNumber in numbers:
-            if currentNumber != number:
-                remainingNumbers.append(currentNumber)
         #FOR each permuation:
             #add current number to the beginning of permutation
             #add permutation to permutations
     #return permutations
-#TODO implement Permutation Generator
-
+#TODO implement Permutation Generator  
 
 print("Sorting algorithm options: \nq = Quick Sort \ns = Shaker Sort \nh = Heap Sort \nm = Merge Sort")
 UserSortAlgorithmChoice = input("Which of the sorting algorithms would you like to use? ").lower()
