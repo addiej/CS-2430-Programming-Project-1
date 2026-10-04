@@ -1,2 +1,13 @@
 Design Notes/Decisions
-a. Use data from tests run to...
+
+a. Python will be used as the primary programming language.
+
+b. Each sorting algorithm will be kept in its own .py file to keep the program organized.
+
+c. The driver program will call the permutation generator and sorting algorithms.
+
+d. Comparison counts will only include comparisons between array elements that determine their ordering.
+
+e. The program will collect performance data for n = 4, 6, and 8.
+
+f. The collected data will be used to determine the best 10 cases, worst 10 cases, and average number of comparisons for each sorting algorithm.
