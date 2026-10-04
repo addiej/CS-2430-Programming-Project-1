@@ -1,4 +1,15 @@
-'''Author: Erich M.'''
+'''#TODO author: Addie Hurst'''
+# TODO:
+# - Generate values from 0 through n - 1.
+# - Replace timing measurements with comparison counts.
+# - Run all four sorting algorithms on every permutation.
+# - Record algorithm name, original array, and comparison count.
+# - Find the best 10 and worst 10 cases for each algorithm and n.
+# - Calculate average comparisons for each algorithm and n.
+# - Make sure sorting does not destroy the original unsorted permutation.
+# - Output clearly labeled results for n = 4, 6, and 8.
+
+'''Code Author: Erich M.'''
 import time
 import csv
 from permutations import *
