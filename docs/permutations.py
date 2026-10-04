@@ -1,3 +1,4 @@
+'''AUTHOR: ERICH M.'''
 def generatePermutations(numbers):
 
     if len(numbers) == 1:
