@@ -8,3 +8,4 @@ Addie - Verification Lead
     -wrote IF- branches for user choice in pseudocode of Driver program.
     -reviewed main.py against project requirements and documented required corrections.
     -updated Design Notes & Decisions
+    -authored and updated Test Plan & Design Notes
