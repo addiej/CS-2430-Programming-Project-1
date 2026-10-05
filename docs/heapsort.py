@@ -109,4 +109,5 @@ def heapsort(numbers):
     #in a format that can be used by the main.py
     return numbers, comparisons
 
-print(f"Heap-sorted array: {heapsort(numbers)}")
+#Formatted print string for testing purposes only 
+#print(f"Heap-sorted array: {heapsort(numbers)}")
