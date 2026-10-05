@@ -105,9 +105,8 @@ def heapsort(numbers):
             # Continue checking from the new position of the moved value.
             currentParent = largest
 
-    # Display the total element-to-element comparisons and return
-    # the completed sorted list.
-    print (f"Number of comparisons: {comparisons}")
-    return numbers
+    # Return array and number of comparison performed
+    #in a format that can be used by the main.py
+    return numbers, comparisons
 
 print(f"Heap-sorted array: {heapsort(numbers)}")
