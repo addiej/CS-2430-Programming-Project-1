@@ -10,6 +10,7 @@ Project Tasks
  8. Collect the results for n = 4, 6, 8 Analysis (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
  9. Determine best 10, worst 10, and average results. (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
  10. Use those results to answer the five analysis questions. (TODO AND REQUIRES VERIFICATION)
+ 11. FINISH ADDING INTELLECTUAL CREDITS TO EACH .py FILE (NOT JUST PSEUDOCODE)
      
   -------------------------------------------- Roles and Responsibilities----------------------------------------------
   
