@@ -1,6 +1,11 @@
 #permutations.py
 
-'''Code AUTHOR: ERICH M., with some edits by Addie Hurst for verification'''
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
+#Primary Author: Erich M., Addie made minor edits
+
 #test n = 6; 0 through n-1 tested
 numbers = [0, 1, 2, 3, 4, 5]
 def generatePermutations(numbers):
