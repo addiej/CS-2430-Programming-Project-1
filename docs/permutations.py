@@ -7,7 +7,7 @@
 #permutations.py
 
 #test n = 6; 0 through n-1 tested
-numbers = [0, 1, 2, 3, 4, 5]
+#numbers = [0, 1, 2, 3, 4, 5]
 def generatePermutations(numbers):
 
     if len(numbers) == 1:
@@ -30,5 +30,5 @@ def generatePermutations(numbers):
     return permutations
     
 #return count of permutations instead of returning each possible permutation (FIXED previous commit)
-permutations = generatePermutations(numbers)
-print("Total permutations:", len(permutations))
+#permutations = generatePermutations(numbers)
+#print("Total permutations:", len(permutations))
