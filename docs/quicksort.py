@@ -1,3 +1,4 @@
+'''Author: Erich M.'''
 def quicksort(numbers):
 
     if len(numbers) <= 1:

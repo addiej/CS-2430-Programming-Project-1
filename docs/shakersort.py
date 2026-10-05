@@ -1,3 +1,4 @@
+'''Author: Erich M.'''
 def shakerSort(numbers):
     #work on copy, to keep original intact
     arr = numbers[:]
