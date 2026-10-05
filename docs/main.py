@@ -3,7 +3,7 @@
 # - Run all four sorting algorithms on every permutation. - STILL NEEDS HEAPSORT
 
 
-'''Code Author: Erich M.'''
+'''Code Author: Erich M., Addie verified'''
 import time
 import csv
 from permutations import *
