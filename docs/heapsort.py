@@ -1,5 +1,8 @@
-'''Code author: Addie Hurst'''
-# Heapsort.py
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
+#Primary Author: Addie H.
 
 numbers = [1, 2, 3]
 
