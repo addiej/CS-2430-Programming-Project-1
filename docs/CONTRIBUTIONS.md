@@ -10,4 +10,5 @@ Addie - Verification Lead
     -updated Design Notes & Decisions
     -authored and updated Test Plan & Design Notes
     -Added TODOs/debugs for mergsort.py and permutations.py (verifying Erich's code)
-    -wrote heapsort.py
+    -implemented and tested Heap Sort, including element-to-element comparison counting. 
+        -Evidence: heapsort.py
