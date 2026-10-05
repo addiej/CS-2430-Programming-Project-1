@@ -114,3 +114,7 @@ def heapsort(numbers):
 
 #Formatted print string for testing purposes only 
 #print(f"Heap-sorted array: {heapsort(numbers)}")
+
+#Referenced concepts from the following sources:
+#'Heap Sort Visually Explained | Sorting Algorithm | Heaps' by ByteQuest on YouTube.com
+#URL: https://www.youtube.com/watch?v=ZxH3jcA3EK0&t=223s
