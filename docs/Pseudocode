@@ -131,7 +131,7 @@ if UserSortAlgorithmChoice == 'm':
     #Add any leftover elements
     #Return/display result
 
-#INTELLECTUAL CREDITS:
+#INTELLECTUAL CREDITS (these are what Addie referenced):
 print ("\nINTELLECTUAL CREDITS: \n")
 IntellectualCreditsMergeSort1 = "Mergesort implementation methods and logic provided by FelixTechTips on YouTube"
 IntellectualCreditsMergeSort1URL = "https://www.youtube.com/watch?v=cVZMah9kEjI&t=544s"
