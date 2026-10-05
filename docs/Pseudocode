@@ -1,4 +1,7 @@
-#[Pseudocode and ToDos can be posted in this folder within this section of the repository]
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
 
 TODO: automated experiment-driver pseudocode
 
@@ -128,7 +131,7 @@ if UserSortAlgorithmChoice == 'm':
     #Add any leftover elements
     #Return/display result
 
-#INTELLECTUAL CREDITS:
+#INTELLECTUAL CREDITS (these are what Addie referenced):
 print ("\nINTELLECTUAL CREDITS: \n")
 IntellectualCreditsMergeSort1 = "Mergesort implementation methods and logic provided by FelixTechTips on YouTube"
 IntellectualCreditsMergeSort1URL = "https://www.youtube.com/watch?v=cVZMah9kEjI&t=544s"

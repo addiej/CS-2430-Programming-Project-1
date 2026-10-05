@@ -1,10 +1,8 @@
-'''TODO author: Addie Hurst'''
-# TODO:
-# - Add a comparison counter.
-# - Count each left[i] <= right[j] comparison.
-# - Do not count loop conditions or index comparisons.
-# - Make the comparison count available to main.py.
-
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
+#Primary Author: Erich M.
 
 '''Author: Erich M.'''
 def mergeSort(numbers):

@@ -1,16 +1,23 @@
+Team 3
+
+Team members Addie Hurst, Erich Mundt
+
+CS 2430 - 502
+
+Programming Project 1 – Fall 2026
+
 (Project Plan)
 Project Tasks
- 1. Create a permutation generator (IN PROGRESS AND REQUIRES VERIFICATION)
- 2. Implement mergesort - Erich (COMPLETE, Addie verified: ADD EVIDENCIARY COMMITS)
- 3. Implement quicksort (IN PROGRESS AND REQUIRES VERIFICATION)
- 4. Implement shaker sort (IN PROGRESS AND REQUIRES VERIFICATION)
- 5. Implement heapsort (IN PROGRESS AND REQUIRES VERIFICATION)
- 6. Make every algorithm count comparisons consistently (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
- 7. Create a driver that runs every permutation through every algorithm. (Addie/Erich - IN PROGRESS AND REQUIRES VERIFICATION)
- 8. Collect the results for n = 4, 6, 8 Analysis (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
- 9. Determine best 10, worst 10, and average results. (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
- 10. Use those results to answer the five analysis questions. (TODO AND REQUIRES VERIFICATION)
- 11. FINISH ADDING INTELLECTUAL CREDITS TO EACH .py FILE (NOT JUST PSEUDOCODE)
+ 1. Create a permutation generator - COMPLETED #bae4390
+ 2. Implement mergesort - COMPLETED #bae4390
+ 3. Implement quicksort - COMPLETED #f11464f
+ 4. Implement shaker sort - COMPLETED #f11464f, #b5e133e
+ 5. Implement heapsort - COMPLETE #3514e89  
+ 6. Make every algorithm count comparisons consistently 
+ 7. Create a driver that runs every permutation through every algorithm. COMPLETE #bae4390
+ 8. Collect the results for n = 4, 6, 8 Analysis 
+ 9. Determine best 10, worst 10, and average results. 
+ 10. Use those results to answer the five analysis questions. 
      
   -------------------------------------------- Roles and Responsibilities----------------------------------------------
   

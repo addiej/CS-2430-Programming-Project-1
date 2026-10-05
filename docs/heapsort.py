@@ -1,5 +1,8 @@
-'''Code author: Addie Hurst'''
-# Heapsort.py
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
+#Primary Author: Addie H.
 
 numbers = [1, 2, 3]
 
@@ -111,3 +114,7 @@ def heapsort(numbers):
 
 #Formatted print string for testing purposes only 
 #print(f"Heap-sorted array: {heapsort(numbers)}")
+
+#Referenced concepts from the following sources:
+#'Heap Sort Visually Explained | Sorting Algorithm | Heaps' by ByteQuest on YouTube.com
+#URL: https://www.youtube.com/watch?v=ZxH3jcA3EK0&t=223s

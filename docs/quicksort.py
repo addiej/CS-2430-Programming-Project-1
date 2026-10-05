@@ -1,6 +1,10 @@
-'''Author: Erich M.'''
-def quicksort(numbers):
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
+#Primary Author: Erich M.
 
+def quicksort(numbers):
     if len(numbers) <= 1:
         return numbers[:], 0
 
@@ -9,16 +13,19 @@ def quicksort(numbers):
     smaller = []
     equal = []
     greater = []
+
     comparisons = 0
 
     for number in numbers:
         comparisons += 1
         if number < pivot:
             smaller.append(number)
-        elif number == pivot:
-            equal.append(number)
         else:
-            greater.append(number)
+            comparisons += 1
+            if number == pivot:
+                equal.append(number)
+            else:
+                greater.append(number)
 
     sortedSmaller, smallerCount = quicksort(smaller)
     sortedGreater, greaterCount = quicksort(greater)
