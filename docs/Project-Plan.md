@@ -8,7 +8,7 @@ Programming Project 1 – Fall 2026
 
 (Project Plan)
 Project Tasks
- 1. Create a permutation generator (IN PROGRESS AND REQUIRES VERIFICATION)
+ 1. Create a permutation generator (COMPLETE, REQUIRES VERIFICATION)
  2. Implement mergesort - Erich (COMPLETE, Addie verified: ADD EVIDENCIARY COMMITS)
  3. Implement quicksort (IN PROGRESS AND REQUIRES VERIFICATION)
  4. Implement shaker sort (IN PROGRESS AND REQUIRES VERIFICATION)
