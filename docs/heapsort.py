@@ -1,7 +1,7 @@
 '''Code author: Addie Hurst'''
 # Heapsort.py
 
-numbers = [1]
+numbers = [1, 2, 3]
 
 def heapsort(numbers):
     comparisons = 0
@@ -15,13 +15,13 @@ def heapsort(numbers):
             rightChild = leftChild + 1
             largest = currentParent
             
-                comparisons = comparisons + 1
             if leftChild < heapSize:
+                comparisons = comparisons + 1
                 if numbers[leftChild] > numbers[largest]:
                     largest = leftChild
                     
-                comparisons = comparisons + 1
             if rightChild < heapSize:
+                comparisons = comparisons + 1
                 if numbers[rightChild] > numbers[largest]:
                     largest = rightChild
 
@@ -52,13 +52,13 @@ def heapsort(numbers):
             rightChild = leftChild + 1
             largest = currentParent
 
-                comparisons = comparisons + 1
             if leftChild < heapSize:
+                comparisons = comparisons + 1
                 if numbers[leftChild] > numbers[largest]:
                     largest = leftChild
                     
-                comparisons = comparisons + 1
             if rightChild < heapSize:
+                comparisons = comparisons + 1
                 if numbers[rightChild] > numbers[largest]:
                     largest = rightChild
 
@@ -70,7 +70,7 @@ def heapsort(numbers):
             numbers[largest] = temporaryValue
 
             currentParent = largest
-
+    print (f"Number of comparisons: {comparisons}")
     return numbers
-print("Heap-sorted array: ")
-print(heapsort(numbers))
+
+print(f"Heap-sorted array: {heapsort(numbers)}")
