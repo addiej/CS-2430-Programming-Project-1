@@ -8,7 +8,6 @@ def heapsort(numbers):
     parentIndex = (heapSize // 2) - 1
 
     while parentIndex >= 0:
-
         currentParent = parentIndex
         while True:
             leftChild = 2 * currentParent + 1
@@ -34,8 +33,6 @@ def heapsort(numbers):
 
         parentIndex = parentIndex - 1
 
-
-    # Move the largest value to the end of the unsorted section.
     while heapSize > 1:
         lastUnsortedIndex = heapSize - 1
 
