@@ -12,7 +12,7 @@ Project Tasks
  2. Implement mergesort - COMPLETED #bae4390
  3. Implement quicksort - COMPLETED #f11464f
  4. Implement shaker sort - COMPLETED #f11464f, #b5e133e
- 5. Implement heapsort - #3514e89  
+ 5. Implement heapsort - COMPLETE #3514e89  
  6. Make every algorithm count comparisons consistently (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
  7. Create a driver that runs every permutation through every algorithm. (Addie/Erich - IN PROGRESS AND REQUIRES VERIFICATION)
  8. Collect the results for n = 4, 6, 8 Analysis (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
