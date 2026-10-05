@@ -1,15 +1,15 @@
 (Project Plan)
 Project Tasks
- 1. Create a permutation generator
+ 1. Create a permutation generator (IN PROGRESS AND REQUIRES VERIFICATION)
  2. Implement mergesort - Erich (COMPLETE, Addie verified: ADD EVIDENCIARY COMMITS)
- 3. Implement quicksort (IN PROGRESS)
- 4. Implement shaker sort (IN PROGRESS)
- 5. Implement heapsort (IN PROGRESS)
- 6. Make every algorithm count comparisons consistently (Addie - IN PROGRESS)
- 7. Create a driver that runs every permutation through every algorithm. Addie/Erich - IN PROGRESS
- 8. Collect the results for n = 4, 6, 8 Analysis (Addie - IN PROGRESS)
- 9. Determine best 10, worst 10, and average results. (Addie - IN PROGRESS)
- 10. Use those results to answer the five analysis questions. (TODO)
+ 3. Implement quicksort (IN PROGRESS AND REQUIRES VERIFICATION)
+ 4. Implement shaker sort (IN PROGRESS AND REQUIRES VERIFICATION)
+ 5. Implement heapsort (IN PROGRESS AND REQUIRES VERIFICATION)
+ 6. Make every algorithm count comparisons consistently (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
+ 7. Create a driver that runs every permutation through every algorithm. (Addie/Erich - IN PROGRESS AND REQUIRES VERIFICATION)
+ 8. Collect the results for n = 4, 6, 8 Analysis (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
+ 9. Determine best 10, worst 10, and average results. (Addie - IN PROGRESS AND REQUIRES VERIFICATION)
+ 10. Use those results to answer the five analysis questions. (TODO AND REQUIRES VERIFICATION)
      
   -------------------------------------------- Roles and Responsibilities----------------------------------------------
   
