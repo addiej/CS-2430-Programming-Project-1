@@ -1,9 +1,9 @@
-'''#TODO author: Addie Hurst'''
-# TODO:
-# - Run all four sorting algorithms on every permutation. - STILL NEEDS HEAPSORT
+#Team 3
+#Team members Addie Hurst, Erich Mundt
+#CS 2430 - 502
+#Programming Project 1 – Fall 2026
+#Primary Author: Erich M.
 
-
-'''Code Author: Erich M., Addie verified'''
 import time
 import csv
 from permutations import *
