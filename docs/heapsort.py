@@ -67,5 +67,5 @@ def heapsort(numbers):
             currentParent = largest
 
     return numbers
-
+print("Heap-sorted array: ")
 print(heapsort(numbers))
