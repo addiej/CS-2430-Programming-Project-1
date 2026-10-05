@@ -1,8 +1,14 @@
+Team 3
+Team members Addie Hurst, Erich Mundt
+CS 2430 - 502
+Programming Project 1 – Fall 2026
+Primary Author: Addie H.
+
 ## Erich - Communications Lead
     -wrote permutations.py
     -wrote mergesort.py
     -wrote main.py
-Addie - Verification Lead
+## Addie - Verification Lead
 
     -created public repository and added Erich M and Huu as collaborators.
     -wrote IF- branches for user choice in pseudocode of Driver program.
