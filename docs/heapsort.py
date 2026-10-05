@@ -1,9 +1,10 @@
 '''Code author: Addie Hurst'''
 # Heapsort.py
 
-numbers = [4, 10, 3, 5, 1]
+numbers = [1]
 
 def heapsort(numbers):
+    comparisons = 0
     heapSize = len(numbers)
     parentIndex = (heapSize // 2) - 1
 
@@ -13,11 +14,13 @@ def heapsort(numbers):
             leftChild = 2 * currentParent + 1
             rightChild = leftChild + 1
             largest = currentParent
-
+            
+                comparisons = comparisons + 1
             if leftChild < heapSize:
                 if numbers[leftChild] > numbers[largest]:
                     largest = leftChild
-
+                    
+                comparisons = comparisons + 1
             if rightChild < heapSize:
                 if numbers[rightChild] > numbers[largest]:
                     largest = rightChild
@@ -49,10 +52,12 @@ def heapsort(numbers):
             rightChild = leftChild + 1
             largest = currentParent
 
+                comparisons = comparisons + 1
             if leftChild < heapSize:
                 if numbers[leftChild] > numbers[largest]:
                     largest = leftChild
-
+                    
+                comparisons = comparisons + 1
             if rightChild < heapSize:
                 if numbers[rightChild] > numbers[largest]:
                     largest = rightChild
