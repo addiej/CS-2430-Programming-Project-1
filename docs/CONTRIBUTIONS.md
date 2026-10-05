@@ -1,6 +1,9 @@
 -Team 3
+
 -Team members Addie Hurst, Erich Mundt
+
 -CS 2430 - 502
+
 -Programming Project 1 – Fall 2026
 
 ## Erich - Communications Lead
