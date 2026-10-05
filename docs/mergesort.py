@@ -9,20 +9,24 @@
 '''Author: Erich M.'''
 def mergeSort(numbers):
     if len(numbers) == 1:
-        return numbers
+        return numbers[:], 0
 
     middle = len(numbers) // 2
-    left = mergeSort(numbers[:middle])
-    right = mergeSort(numbers[middle:])
+    left, leftCount = mergeSort(numbers[:middle])
+    right, rightCount = mergeSort(numbers[middle:])
 
-    return merge(left, right)
+    merged, mergeCount = merge(left, right)
+
+    return merged, leftCount + rightCount + mergeCount
 
 def merge(left, right):
     merged = []
     i = 0
     j = 0
+    comparisons = 0
 
     while i < len(left) and j < len(right):
+        comparisons += 1
         if left[i] <= right[j]:
             merged.append(left[i])
             i += 1
@@ -33,4 +37,4 @@ def merge(left, right):
     merged.extend(right[j:])
     merged.extend(left[i:])
 
-    return merged
+    return merged, comparisons

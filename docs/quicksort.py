@@ -1,15 +1,17 @@
 def quicksort(numbers):
 
     if len(numbers) <= 1:
-        return numbers
+        return numbers[:], 0
 
     pivot = numbers[len(numbers) // 2]
 
     smaller = []
     equal = []
     greater = []
+    comparisons = 0
 
     for number in numbers:
+        comparisons += 1
         if number < pivot:
             smaller.append(number)
         elif number == pivot:
@@ -17,7 +19,9 @@ def quicksort(numbers):
         else:
             greater.append(number)
 
-    sorted_smaller = quicksort(smaller)
-    sorted_greater = quicksort(greater)
+    sortedSmaller, smallerCount = quicksort(smaller)
+    sortedGreater, greaterCount = quicksort(greater)
 
-    return sorted_smaller + equal + sorted_greater
+    result = sortedSmaller + equal + sortedGreater
+
+    return result, comparisons + smallerCount + greaterCount

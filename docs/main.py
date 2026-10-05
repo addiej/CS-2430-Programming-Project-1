@@ -15,42 +15,60 @@ import csv
 from permutations import *
 from mergesort import *
 from quicksort import *
+from shakersort import *
 
 SIZES = [4, 6, 8]
-TRIALS = 10
-ALGORITHMS = {"mergesort": mergeSort, "quicksort": quicksort}
+ALGORITHMS = {"mergesort": mergeSort, "quicksort": quicksort, "shakersort": shakerSort}
 
-def benchmark(sort_algorithm, inputs, trials=TRIALS):
-    trial_times = []
-    for trial in range(trials):
-        start = time.perf_counter()
-        for arr in inputs:
-            sort_algorithm(arr)
-        end = time.perf_counter()
-        trial_times.append(end - start)
-    return trial_times
+def countComparisons(sort_algorithm, inputs):
+    #Pass a copy so the original permutation can never be changed
+    result, comparisons = sort_algorithm(list(inputs))
+
+    #Sanity check that the algorithm actually sorted correctly
+    assert result == sorted(inputs), \
+        f"{sort_algorithm.__name__} failed on {inputs}!"
+    return comparisons
 
 if __name__ == "__main__":
-    rows = []
-    print(f"{'algorithm':<10} {'size' :>4} {'arrays':>7} {'trial':>5} {'total (s)':>10} {'per sort (microseconds)':>14}")
+    records = []
 
-    for name, sort_algorithm in ALGORITHMS.items():
+    for size in SIZES:
 
-        for size in SIZES:
-            inputs = generatePermutations(list(range(1, size + 1)))
-            count = len(inputs)
-            trial_times = benchmark(sort_algorithm, inputs)
+        permutations = generatePermutations(list(range(size)))
 
-            for trial, total in enumerate(trial_times, start=1):
-                per_sort_us = total / count * 1_000_000
-                print(f"{name:<10} {size:>4} {count:>7} {trial:>5} {total:>10.4f} {per_sort_us:>14.2f}")
-                rows.append([name, size, count, trial, total, per_sort_us])
+        print("=" * 60)
+        print(f"RESULTS FOR n = {size}")
+        print("=" * 60)
 
-            best = min(trial_times)
-            print(f" -> {name}, size {size}: best total {best:.4f}s, "
-              f"avg per sort {best / count * 1_000_000:.2f} microseconds\n")
+        for name, sort_algorithm in ALGORITHMS.items():
+            group = []
+            for permutation in permutations:
+                comparisons = countComparisons(sort_algorithm, permutation)
+                group.append((name, size, tuple(permutation), comparisons))
+            records.extend(group)
+
+            average = sum(r[3] for r in group) / len(group)
+            best10 = sorted(group, key=lambda r: r[3])[:10]
+            worst10 = sorted(group, key=lambda r: r[3], reverse=True)[:10]
+
+            print(f"\n--- {name}, n = {size} ---")
+            print(f"Average comparisons: {average:.2f}")
+
+            print("Best 10 cases (fewest comparisons):")
+            for r in best10:
+                print(f"  {list(r[2])}  ->  {r[3]} comparisons")
+
+            print("Worst 10 cases (most comparisons):")
+            for r in worst10:
+                print(f"  {list(r[2])}  ->  {r[3]} comparisons")
+
+        print()
+
+
+
 
 with open("results.csv", "w", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["algorithm", "sizes", "arrays_sorted", "trial", "total_seconds", "per_sort_microseconds"])
-    writer.writerows(rows)
+    writer.writerow(["algorithm", "n", "original_array", "comparisons"])
+    for algorithm, size, original, comparisons in records:
+        writer.writerow([algorithm, size, list(original), comparisons])
