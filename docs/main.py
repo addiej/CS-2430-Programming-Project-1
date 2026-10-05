@@ -10,6 +10,7 @@ from permutations import *
 from mergesort import *
 from quicksort import *
 from shakersort import *
+from heapsort import *
 
 SIZES = [4, 6, 8]
 ALGORITHMS = {"mergesort": mergeSort, "quicksort": quicksort, "shakersort": shakerSort}
